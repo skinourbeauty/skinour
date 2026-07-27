@@ -17,6 +17,21 @@ if (navToggle && nav) {
   });
 }
 
+// Service category tabs
+const tabButtons = document.querySelectorAll('.tab-btn');
+const panels = document.querySelectorAll('.category-panel');
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    tabButtons.forEach((b) => b.classList.remove('active'));
+    panels.forEach((p) => p.classList.remove('active'));
+
+    btn.classList.add('active');
+    const target = document.getElementById(btn.dataset.cat);
+    if (target) target.classList.add('active');
+  });
+});
+
 // Footer year, kept in sync automatically
 const yearEl = document.getElementById('year');
 if (yearEl) {
