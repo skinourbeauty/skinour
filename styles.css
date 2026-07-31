@@ -186,14 +186,16 @@ h1, h2, h3 {
   color: var(--ink-faint);
 }
 .hero-art {
-  border-radius: var(--radius-lg);
-  background: var(--accent-soft);
-  aspect-ratio: 4/5;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  border: 1px solid var(--line);
+  border: 0;
+}
+.hero-art > img {
+  width: 100% !important;
+  max-height: none !important;
 }
 .hero-art .placeholder-label {
   position: absolute;
@@ -335,14 +337,14 @@ section { padding: 88px 0; }
 }
 .doctor-photo {
   aspect-ratio: 2/3;
-  background: var(--accent-soft);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--accent-dark);
   font-size: 13px;
   text-align: center;
-  padding: 20px;
+  padding: 0;
 }
 .doctor-photo img {
   display: block;
@@ -350,6 +352,12 @@ section { padding: 88px 0; }
   height: 100%;
   object-fit: cover;
   object-position: center 18%;
+}
+
+@media (min-width: 901px) {
+  .doctor-photo {
+    aspect-ratio: 4/5;
+  }
 }
 .doctor-card .info { padding: 20px 22px; }
 .doctor-card h3 { font-size: 19px; }
