@@ -13,14 +13,12 @@ just three files you can open and edit directly.
 
 Everything below is placeholder content — search `index.html` for these and swap them in:
 
-- Clinic name, if you want something other than "Clinique du Cèdre"
-- Doctor name, credentials, and bio (`About` section)
-- Real address, phone number, email, and Instagram handle
-- Opening hours
-- Service list and prices (the `Services & prices` section) — add, remove, or reprice rows freely, each is one `.service-row` block
-- The two photo placeholders (hero image, doctor portrait) — replace the placeholder `<div>` with an `<img src="...">` once you have real photos
-- The Google Maps embed currently points to "Achrafieh, Beirut" generically — once you have the real address, replace the `src` in the `<iframe>` with a link from Google Maps' own "Share > Embed a map" option for the exact building
-- The WhatsApp link (`https://wa.me/9611234567`) — replace the number with the real one, in international format with no `+`, `00`, spaces, or dashes
+- Real address, phone number, email, and Instagram handle (mostly done — check `index.html` for anything still bracketed)
+- The two images the page now expects (add both to an `images/` folder next to `index.html`):
+  - `images/logo.png` — your real logo file, shown on the homepage hero. Until this file exists, the page shows a small fallback note instead of a broken image icon.
+  - `images/founder.jpg` — a real photo of the founder, shown in the About section. Same graceful fallback if it's missing.
+- The Google Maps embed points at "Galaxy Mall, Gallery Semaan, Beirut" generically — for a pinpoint match, use Google Maps' own "Share > Embed a map" option for the exact building and swap the `src` in the `<iframe>`
+- The WhatsApp link and phone number are already set to the real number (+961 81 800 390) — update again if it ever changes
 
 ## Running it locally
 
